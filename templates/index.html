@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi LED Control</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Raspberry Pi LED Control</h1>
+
+    <div class="card">
+        <h2>LED 1 - GPIO 17</h2>
+        <p>Status: {{ "ON" if led_states["led1"] else "OFF" }}</p>
+        <a href="/toggle/led1">Toggle LED 1</a>
+    </div>
+
+    <div class="card">
+        <h2>LED 2 - GPIO 27</h2>
+        <p>Status: {{ "ON" if led_states["led2"] else "OFF" }}</p>
+        <a href="/toggle/led2">Toggle LED 2</a>
+    </div>
+</body>
+</html>
